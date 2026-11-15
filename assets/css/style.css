@@ -1,0 +1,22 @@
+:root {
+  --bs-primary: #0b2545;
+  --bs-primary-rgb: 11, 37, 69;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: "Poppins", system-ui, sans-serif; }
+
+.hero {
+  padding-top: 7rem;
+  background: linear-gradient(135deg, #0b2545 0%, #13315c 60%, #1d4e89 100%);
+}
+
+.photo, .avatar {
+  width: 240px;
+  height: 240px;
+}
+.photo {
+  object-fit: cover;
+  object-position: 60% 78%; /* geser agar wajah terlihat di bingkai bulat */
+}
+.avatar { font-size: 4.5rem; }

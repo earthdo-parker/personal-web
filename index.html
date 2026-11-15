@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Ardo Rifki Safitra | Profil dan Portofolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+    <!-- Navbar (Bootstrap navbar + collapse + scrollspy) -->
+    <nav id="mainNav" class="navbar fixed-top navbar-expand-lg bg-primary border-bottom border-warning border-3" data-bs-theme="dark">
+        <div class="container">
+            <a href="#hero" class="navbar-brand fw-bold">Earthdo.</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Kegiatan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero: nama dan foto -->
+    <header id="hero" class="hero text-white pb-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-md-7 order-2 order-md-1">
+                    <p class="text-info mb-2">Halo, saya</p>
+                    <h1 class="display-4 fw-bold">Ahmad Ardo Rifki Safitra</h1>
+                    <p class="fs-5 mt-3">
+                        Mahasiswa Sistem Informasi Telkom University Surabaya angkatan 2025
+                        yang tertarik pada analisis bisnis dan pengembangan sistem informasi.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+                        <a href="#portfolio" class="btn btn-warning btn-lg px-4 fw-semibold">Lihat portofolio</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Hubungi saya</a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-1 order-md-2 text-center">
+                    <!-- Foto: assets/images/foto.jpg. Jika belum ada, tampil inisial. -->
+                    <img src="assets/images/foto.jpg" alt="Foto Ahmad Ardo Rifki Safitra"
+                         class="photo rounded-circle border border-5 border-warning shadow-lg"
+                         onerror="this.classList.add('d-none'); document.getElementById('avatar').classList.replace('d-none','d-flex');">
+                    <div id="avatar" class="avatar d-none align-items-center justify-content-center mx-auto rounded-circle bg-info text-white fw-bold border border-5 border-warning" role="img" aria-label="Inisial Earthdo">AR</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tentang (grid + card + list-group) -->
+    <section id="about" class="py-5">
+        <div class="container py-3">
+            <h2 class="fw-bold text-primary">Tentang saya</h2>
+            <hr class="border-warning border-4 opacity-100 rounded" style="width: 64px;">
+            <div class="row g-4 mt-1">
+                <div class="col-lg-7">
+                    <p class="fs-5">
+                        Saya biasa dipanggil Ardo, kuliah di Surabaya dan sedang mendalami
+                        cara teknologi membantu proses bisnis berjalan lebih baik.
+                    </p>
+                    <p>
+                        Di kampus saya mengerjakan praktikum pengembangan web, sistem operasi,
+                        analisis dan perancangan sistem informasi, serta analisis laporan keuangan.
+                        Di luar kuliah, saya pernah terlibat di organisasi BMAI sebagai mentor.
+                    </p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-primary border-top border-4">
+                        <div class="card-header fw-semibold text-primary">Data singkat</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="bi bi-mortarboard-fill text-primary me-2"></i>S1 Sistem Informasi</li>
+                            <li class="list-group-item"><i class="bi bi-building text-success me-2"></i>Telkom University Surabaya</li>
+                            <li class="list-group-item"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Surabaya, Jawa Timur</li>
+                            <li class="list-group-item"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Analisis bisnis, sistem informasi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portofolio (row-cols + card + badge) -->
+    <section id="portfolio" class="py-5 bg-info-subtle">
+        <div class="container py-3">
+            <h2 class="fw-bold text-primary">Portofolio</h2>
+            <hr class="border-warning border-4 opacity-100 rounded" style="width: 64px;">
+            <p class="text-secondary mb-4">Tugas Besar dan tugas praktikum yang pernah saya kerjakan selama kuliah.</p>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                <div class="col">
+                    <div class="card h-100 border-primary border-top border-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-bootstrap-fill fs-2 text-primary"></i>
+                            <h3 class="card-title h5 mt-3">Clone Website Bootstrap</h3>
+                            <p class="card-text text-secondary">Meniru halaman utama Bootstrap lengkap dengan navbar, hero, bagian Icons dan Themes, serta footer yang responsif.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge text-bg-primary">HTML</span>
+                            <span class="badge text-bg-primary">CSS</span>
+                            <span class="badge text-bg-primary">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-success border-top border-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-database-fill-gear fs-2 text-success"></i>
+                            <h3 class="card-title h5 mt-3">CRUD PHP dan MySQL</h3>
+                            <p class="card-text text-secondary">Aplikasi web dengan form registrasi serta fitur tambah, ubah, dan hapus data yang terhubung ke database MySQL.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge text-bg-success">PHP</span>
+                            <span class="badge text-bg-success">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-warning border-top border-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-newspaper fs-2 text-warning"></i>
+                            <h3 class="card-title h5 mt-3">Clone Halaman Berita (CSS)</h3>
+                            <p class="card-text text-secondary">Tugas CSS lanjutan untuk meniru tampilan halaman berita, dan sebelumnya navigasi horizontal sebagai tugas dasar.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge text-bg-warning">HTML</span>
+                            <span class="badge text-bg-warning">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-danger border-top border-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-terminal-fill fs-2 text-danger"></i>
+                            <h3 class="card-title h5 mt-3">Server Linux (Praktikum SISOP)</h3>
+                            <p class="card-text text-secondary">Praktikum pada mesin virtual Rocky Linux: Docker, SSH dan bash scripting, web server Nginx, DNS server BIND, serta mail server dan firewall.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge text-bg-danger">Rocky Linux</span>
+                            <span class="badge text-bg-danger">Nginx</span>
+                            <span class="badge text-bg-danger">Bash</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-info border-top border-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-diagram-3-fill fs-2 text-info"></i>
+                            <h3 class="card-title h5 mt-3">Analisis Sistem Laundry</h3>
+                            <p class="card-text text-secondary">Tugas besar analisis dan perancangan sistem informasi bertema laundry, mencakup kebutuhan fungsional dan non-fungsional, use case, dan activity diagram.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge text-bg-info">Use Case</span>
+                            <span class="badge text-bg-info">Activity Diagram</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 border-secondary border-top border-4 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-graph-up-arrow fs-2 text-secondary"></i>
+                            <h3 class="card-title h5 mt-3">Analisis Laporan Keuangan</h3>
+                            <p class="card-text text-secondary">Studi kasus analisis rasio keuangan PT GlowSkin Indonesia periode 2021 sampai 2025 menggunakan Excel.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 pb-3">
+                            <span class="badge text-bg-secondary">Excel</span>
+                            <span class="badge text-bg-secondary">Analisis rasio</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kegiatan (accordion) -->
+    <section id="experience" class="py-5">
+        <div class="container py-3">
+            <h2 class="fw-bold text-primary">Pendidikan dan kegiatan</h2>
+            <hr class="border-warning border-4 opacity-100 rounded" style="width: 64px;">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="accordion" id="accordionKegiatan">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#k1" aria-expanded="true" aria-controls="k1">
+                                    <i class="bi bi-mortarboard-fill text-primary me-2"></i>Mahasiswa S1 Sistem Informasi
+                                </button>
+                            </h3>
+                            <div id="k1" class="accordion-collapse collapse show" data-bs-parent="#accordionKegiatan">
+                                <div class="accordion-body">Telkom University Surabaya, angkatan 2025. Mempelajari pengembangan web, sistem operasi, analisis dan perancangan sistem informasi, serta analisis laporan keuangan.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#k2" aria-expanded="false" aria-controls="k2">
+                                    <i class="bi bi-people-fill text-success me-2"></i>Mentor di BMAI
+                                </button>
+                            </h3>
+                            <div id="k2" class="accordion-collapse collapse" data-bs-parent="#accordionKegiatan">
+                                <div class="accordion-body">Terlibat di organisasi BMAI dengan peran sebagai mentor.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#k3" aria-expanded="false" aria-controls="k3">
+                                    <i class="bi bi-award-fill text-warning me-2"></i>Pelatihan dan workshop
+                                </button>
+                            </h3>
+                            <div id="k3" class="accordion-collapse collapse" data-bs-parent="#accordionKegiatan">
+                                <div class="accordion-body">Pelatihan Cisco NetAcad dan workshop Future Entrepreneur Summit Indonesia.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian (nav tabs + badge) -->
+    <section id="skills" class="py-5 bg-info-subtle">
+        <div class="container py-3">
+            <h2 class="fw-bold text-primary">Keahlian</h2>
+            <hr class="border-warning border-4 opacity-100 rounded" style="width: 64px;">
+
+            <ul class="nav nav-tabs" id="skillTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="tab-sw" data-bs-toggle="tab" data-bs-target="#pane-sw" type="button" role="tab" aria-controls="pane-sw" aria-selected="true">Perangkat lunak</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab-web" data-bs-toggle="tab" data-bs-target="#pane-web" type="button" role="tab" aria-controls="pane-web" aria-selected="false">Pengembangan web</button>
+                </li>
+            </ul>
+            <div class="tab-content bg-white border border-top-0 rounded-bottom p-4" id="skillTabContent">
+                <div class="tab-pane fade show active" id="pane-sw" role="tabpanel" aria-labelledby="tab-sw" tabindex="0">
+                    <span class="badge text-bg-primary fs-6 fw-normal">Microsoft Word</span>
+                    <span class="badge text-bg-success fs-6 fw-normal">Cisco Packet Tracer</span>
+                    <span class="badge text-bg-info fs-6 fw-normal">DBeaver</span>
+                </div>
+                <div class="tab-pane fade" id="pane-web" role="tabpanel" aria-labelledby="tab-web" tabindex="0">
+                    <span class="badge text-bg-primary fs-6 fw-normal">HTML</span>
+                    <span class="badge text-bg-success fs-6 fw-normal">CSS</span>
+                    <span class="badge text-bg-warning fs-6 fw-normal">Bootstrap</span>
+                    <span class="badge text-bg-danger fs-6 fw-normal">PHP</span>
+                    <span class="badge text-bg-info fs-6 fw-normal">MySQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak (list-group) -->
+    <section id="contact" class="py-5">
+        <div class="container py-3">
+            <h2 class="fw-bold text-primary">Kontak</h2>
+            <hr class="border-warning border-4 opacity-100 rounded" style="width: 64px;">
+            <p class="fs-5">Ingin berdiskusi atau berkolaborasi? Hubungi saya lewat:</p>
+            <div class="row">
+                <div class="col-md-8 col-lg-6">
+                    <div class="list-group">
+                        <a href="mailto:emailkamu@example.com" class="list-group-item list-group-item-action"><i class="bi bi-envelope-fill text-danger me-2"></i>ahmadardorifkisafitra@gmail.com</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-github text-primary me-2"></i>github.com/earthdo-parker</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-instagram text-success me-2"></i>@ahmadardr</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4 border-top border-warning border-3">
+        <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+            <small>&copy; 2026 Ahmad Ardo Rifki Safitra. Praktikum PAW Modul 7.</small>
+            <small><a href="#hero" class="link-warning text-decoration-none">Kembali ke atas <i class="bi bi-arrow-up"></i></a></small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
